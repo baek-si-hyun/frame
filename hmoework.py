@@ -39,7 +39,7 @@ for i in range(frame_cnt1 - effect_frames):
     cv2.imshow('frame', frame1)
     cv2.waitKey(delay)
 
-# 합성하기
+# 전환효과 영상
 for i in range(effect_frames):
     ret1, frame1 = cap1.read()
     ret2, frame2 = cap2.read()

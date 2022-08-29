@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import sys
-
+# 동영상 3개를 이어붙인다 생각하면됨
 # 합성시킬 두 개의 영상 열기
 cap1 = cv2.VideoCapture('video1.mp4')
 cap2 = cv2.VideoCapture('video2.mp4')

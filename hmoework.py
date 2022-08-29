@@ -49,7 +49,7 @@ for i in range(effect_frames):
 
     dx = int((w / effect_frames) * i)
 
-    frame = np.zeros((h, w, 3), dtype=np.uint8)
+    frame = np.zeros((h, w, 3), dtype=np.uint8) # np.zeros = 0으로 가득찬 배열을 하나
     frame[:, 0:dx, :] = frame2[:, 0:dx, :]  # 0부터 dx까지는 영상2
     frame[:, dx:w, :] = frame1[:, dx:w, :]  # dx 부터 끝까지는 영상1
 

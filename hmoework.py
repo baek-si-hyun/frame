@@ -28,7 +28,7 @@ fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 
 out = cv2.VideoWriter('output.avi', fourcc, fps, (w, h))
 
-# 1번 영상 열기
+# 1번 영상
 for i in range(frame_cnt1 - effect_frames):
     ret1, frame1 = cap1.read()
 
@@ -57,7 +57,7 @@ for i in range(effect_frames):
     out.write(frame)
     cv2.imshow('frame', frame)
     cv2.waitKey(delay)
-
+# 2번 영상
 for i in range(effect_frames, frame_cnt2):
     ret2, frame2 = cap2.read()
 

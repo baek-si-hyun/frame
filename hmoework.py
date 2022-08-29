@@ -13,6 +13,8 @@ if not cap1.isOpened() or not cap2.isOpened():
 frame_cnt1 = round(cap1.get(cv2.CAP_PROP_FRAME_COUNT))
 frame_cnt2 = round(cap2.get(cv2.CAP_PROP_FRAME_COUNT))
 fps = cap1.get(cv2.CAP_PROP_FPS)
+# fps는 초당 프레임이니까 전환효과를 2초주고 싶으면 fps*2해주면 됨
+# effect_frames = round(fps * 2)
 effect_frames = round(fps)
 
 delay = round(1000 / fps)
